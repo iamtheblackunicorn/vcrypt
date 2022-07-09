@@ -1,0 +1,154 @@
+/*
+VCRYPT by Alexander Abraham,
+a.k.a. "The Black Unicorn", a.k.a. "Angeldust Duke".
+Licensed under the MIT license.
+*/
+
+/*This file styles the desktop view of VCrypt.*/
+
+html, body {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    background-repeat: no-repeat !important;
+    background-size: cover  !important;
+    background-attachment:fixed  !important;
+    margin: 0px;
+    box-sizing: border-box;
+    background: repeating-linear-gradient(
+        135deg, 
+        $mainColor, 
+        $mainColor 10px, 
+        $accentColor 0px, 
+        $accentColor 50px
+    );
+}
+h1 {
+    width: 100vw;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-family: $headingFont;
+    background-color: $accentColor;
+    color: $mainColor;
+    font-size: 50px;
+    padding: 20px;
+    margin: 0px;
+    text-align: left;
+}
+div.footer {
+    width: 100vw;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $accentColor;
+    color: $mainColor;
+    padding: 20px;
+    margin: 0px;
+}
+p.footer {
+    text-align: left;
+    font-family: $headingFont;
+    background-color: $accentColor;
+    color: $mainColor;
+    font-size: 30px;
+    padding: 20px;
+    margin: 0px;
+}
+a {
+    font-family: $headingFont;
+    background-color: $accentColor;
+    color: $mainColor;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: underline;
+    transition-duration: 0.6s;
+}
+a:hover {
+    color: $hoverColor;
+}
+div.content {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+    border: 4px solid $mainColor;
+    background-color: $accentColor;
+    padding: 0px;
+    margin-top: 2vh;
+    margin-bottom: 0px;
+    border-radius: 15px;
+}
+div.result {
+    width: 70%;
+    height: 30%;
+    margin: 0 auto;
+    display: block;
+    background-color: $mainColor;
+    padding: 0px;
+    margin-bottom: 40px;
+    overflow-x: scroll;
+    margin-top: 30px;
+    border-radius: 15px;
+    border-top: 4px solid $accentColor;
+    border-left: 4px solid $accentColor;
+    border-right: 4px solid $accentColor;
+}
+p.result {
+    font-family: $contentFont;
+    font-size: 30px;
+    padding: 10px;
+    color: $accentColor;
+}
+textarea {
+    border: 2px solid $mainColor;
+    background-color: $accentColor;
+    width: 66%;
+    border-radius: 15px;
+    font-family: $contentFont;
+    font-size: 25px;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: $mainColor;
+    margin: 0 auto;
+    display: block;
+}
+textarea:focus {
+    outline: none;
+}
+p.factor {
+    font-family: $contentFont;
+    color: $mainColor;
+    font-size: 25px;
+    text-align: center;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+button {
+    width: 70%;
+    background-color: $accentColor;
+    padding: 10px;
+    font-size: 25px;
+    font-family: $headingFont;
+    transition-duration: 0.6s;
+    color: $mainColor;
+    border: 3px solid $mainColor;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+button:hover {
+    background-color: $mainColor;
+    color: $accentColor;
+}

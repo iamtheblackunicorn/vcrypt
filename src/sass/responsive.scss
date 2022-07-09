@@ -1,0 +1,39 @@
+/*
+VCRYPT by Alexander Abraham,
+a.k.a. "The Black Unicorn", a.k.a. "Angeldust Duke".
+Licensed under the MIT license.
+*/
+
+/*This file styles the responsive view of VCrypt.*/
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+    p.footer {
+        font-size: 25px;
+        padding: 10px;
+    }
+    a {
+        font-size: 25px;
+    }    
+    div.result {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    p.result {
+        font-size: 25px;
+    }
+    textarea {
+        margin-bottom: 20px;
+    }
+    p.factor {
+        font-size: 23px;
+    }
+    button {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}

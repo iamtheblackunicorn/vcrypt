@@ -64,6 +64,11 @@ $ npm run build
 - Upload to GitHub.
 - Deployment on GitHub Pages.
 
+### Version 1.1.0
+
+- Small layout update for responsive layouts.
+- Added a button to copy text from the result field.
+
 ## NOTE :scroll:
 
 - *VCrypt :ribbon: :scroll: :lock:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*

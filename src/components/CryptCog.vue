@@ -24,7 +24,14 @@ The main section of the app that does all the heavy lifting.
 
   <!--Displays the mode that is currently active.-->
   <p class="factor">Mode: {{ mode }}</p>
+
+  <!--Displays the status of clipboard copying.-->
+  <p class="factor">Result copied: {{ isCopied }}</p>
+
   <br/>
+
+  <!--Allows the user to copy text from the result field.-->
+  <button @click="copyResult()">Copy</button>
 
   <!--Allows the user to increase the encryption factor.-->
   <button @click="increment()">Increment</button>
@@ -78,7 +85,9 @@ export default {
        factor: 1,
        // A variable to store the computational
        // result.
-       result: 'Your result goes here.'
+       result: 'Your result goes here.',
+       // Tells the user if the text has been copied.
+       isCopied: 'No.'
     };
   },
   methods: {
@@ -190,6 +199,12 @@ export default {
         this.mode = 'encrypt';
       }
     },
+
+    // Copies the text from the result field!
+    copyResult(){
+      navigator.clipboard.writeText(this.result);
+      this.isCopied = 'Yes!';
+    }
   }  
 }
 </script>

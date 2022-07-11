@@ -16,17 +16,23 @@ Licensed under the MIT license.
         font-size: 25px;
         padding: 10px;
     }
+    div.content {
+        width: 100vw;
+        border: none;
+    }
     a {
         font-size: 25px;
     }    
     div.result {
+        width: 100vw;
         margin-bottom: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
     }
     p.result {
         font-size: 25px;
     }
     textarea {
+        width: 90vw;
         margin-bottom: 20px;
     }
     p.factor {

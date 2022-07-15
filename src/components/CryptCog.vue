@@ -28,6 +28,9 @@ The main section of the app that does all the heavy lifting.
   <!--Displays the status of clipboard copying.-->
   <p class="factor">Result copied: {{ isCopied }}</p>
 
+  <!--Small explanation for users.-->
+  <p class="factor">The factor is the<br/>encryption/decryption key.</p>
+
   <br/>
 
   <!--Allows the user to copy text from the result field.-->
@@ -55,11 +58,12 @@ The main section of the app that does all the heavy lifting.
   Allows the user to switch between modes.
   -->
   <button @click="switchMode()">Switch Mode</button>
-  <br/>
-  <br/>
+
+  <BreakerCog/>
+
  </div>
- <br/>
- <br/>
+ 
+ <BreakerCog/>
  
 </template>
 
@@ -69,9 +73,15 @@ The main section of the app that does all the heavy lifting.
 // functions from my library.
 import zeppo from 'zeppo';
 
+// We import the breakers for layout reasons.
+import BreakerCog from './BreakerCog.vue';
+
 export default {
   // Naming and registering the component.
   name: 'CryptCog',
+  components: {
+    BreakerCog
+  },
   data() {
     // Setting up the app-wide
     // variables.

@@ -69,6 +69,13 @@ $ npm run build
 - Small layout update for responsive layouts.
 - Added a button to copy text from the result field.
 
+### Version 1.2.0
+
+- Added a better explanation for users.
+- Added a more a readbale font on buttons.
+- Cleaned up the code a bit.
+- Better documentation.
+
 ## NOTE :scroll:
 
 - *VCrypt :ribbon: :scroll: :lock:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*

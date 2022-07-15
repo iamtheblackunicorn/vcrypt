@@ -13,7 +13,7 @@ export default {
   components: {
     CryptCog,
     HeadingCog,
-    FooterCog
+    FooterCog,
   }
 }
 </script>
@@ -27,9 +27,14 @@ export default {
   font-family: 'Mono';
   src: url('https://blckunicorn.art/assets/fonts/Mono.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'PSB';
+  src: url('https://blckunicorn.art/assets/fonts/PSB.ttf') format('truetype');
+}
 $hoverColor: #FF7BAC;
 $headingFont: 'Cyberpunk';
 $contentFont: 'Mono';
+$buttonFont: 'PSB';
 $accentColor: #000000;
 $mainColor: #EA1573;
 @import './sass/desktop.scss';
